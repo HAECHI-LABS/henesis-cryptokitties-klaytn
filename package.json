@@ -1,0 +1,12 @@
+{
+  "name": "tutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "installAll": "cd ./frontend && npm install && cd ../backend && npm install"
+  },
+  "dependencies": {
+    "create-react-app": "^3.1.1"
+  }
+}

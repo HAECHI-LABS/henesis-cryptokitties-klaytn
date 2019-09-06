@@ -1,0 +1,14 @@
+{
+    "event": "AuctionSuccessful",
+    "contract":"SiringClockAuction",
+
+    "args": {
+        "tokenId":874864,
+        "totalPrice":21695535879629630,
+        "winner":"0x06012c8cf97bead5deae237070f9587f8e7a266d"
+    },
+    "blockMeta": {
+        "blockNumber": 200000,
+        "transactionHash": "0x222"
+    }
+}

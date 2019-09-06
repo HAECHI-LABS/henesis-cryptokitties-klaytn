@@ -1,0 +1,15 @@
+{
+    "event":"Pregnant",
+    "contract":"KittyCore",
+    "args":{
+        "owner":"0x6d3ec03ccff43932fe7621a400b3bb3c283f5452",
+        "matronId":513192,
+        "sireId":1689544,
+        "cooldownEndBlock":8469140
+    }
+    ,
+    "blockMeta": {
+        "blockNumber": 200000,
+        "transactionHash": "0x222"
+    }
+}

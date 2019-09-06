@@ -1,0 +1,26 @@
+version: v1
+name: kitty-tutorial 
+
+filters:
+  contracts:
+  - address: '0x06012c8cf97BEaD5deAe237070F9587f8E7A266d'
+    path: ./contracts/KittyCore.sol
+    name: KittyCore 
+    compilerVersion: 0.4.18
+  - address: '0xb1690C08E213a35Ed9bAb7B318DE14420FB57d8C'
+    path: ./contracts/SaleClockAuction.sol
+    name: SaleClockAuction 
+    compilerVersion: 0.4.18
+  - address: '0x6AA14E2e6494469D50f5f27b1FBa46bB20f2bb26'
+    path: ./contracts/SiringClockAuction.sol
+    name: SiringClockAuction 
+    compilerVersion: 0.4.18
+
+blockchain:
+  platform: ethereum 
+  network: mainnet 
+  threshold: 5
+  interval: 1000
+
+provider:
+  type: webSocket

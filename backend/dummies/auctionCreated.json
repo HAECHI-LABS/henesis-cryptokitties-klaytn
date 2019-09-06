@@ -1,0 +1,15 @@
+{
+    "event":"AuctionCreated",
+    "contract":"SaleClockAuction",
+    "args": {
+        "tokenId":1119174,
+        "startingPrice":5000000000000000,
+        "endingPrice":1000000000000000,
+        "duration":172800
+    }
+    ,
+    "blockMeta": {
+        "blockNumber": 200000,
+        "transactionHash": "0x222"
+    }
+}

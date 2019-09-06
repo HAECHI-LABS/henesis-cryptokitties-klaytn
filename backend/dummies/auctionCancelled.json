@@ -1,0 +1,12 @@
+{
+    "event":"AuctionCancelled",
+    "contract":"SaleClockAuction",
+    "args":{
+        "tokenId":1689502
+    }
+    ,
+    "blockMeta": {
+        "blockNumber": 200000,
+        "transactionHash": "0x222"
+    }
+}

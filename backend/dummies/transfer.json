@@ -1,0 +1,14 @@
+{
+    "event":"Transfer",
+    "contract":"KittyCore",
+    "args":{
+        "from":"0x71bfc705a72eebc25cefc6929f64a725b740db4b",
+        "to":"0xb1690c08e213a35ed9bab7b318de14420fb57d8c",
+        "tokenId":"1689095"
+    }
+    ,
+    "blockMeta": {
+        "blockNumber": 200000,
+        "transactionHash": "0x222"
+    }
+}

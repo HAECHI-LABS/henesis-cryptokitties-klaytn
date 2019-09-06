@@ -1,0 +1,16 @@
+{
+    "event":"Birth",
+    "contract":"KittyCore",
+    "args":{
+        "owner":"0x68b42e44079d1d0a4a037e8c6ecd62c48967e69f", 
+        "kittyId": 1690185,  
+        "matronId": 1689377, 
+        "sireId":1689281, 
+        "genes":"000049909418524a4c679c8915115124ca52045094e9795cf700c8508e8191a2"
+    }
+    ,
+    "blockMeta": {
+        "blockNumber": 200000,
+        "transactionHash": "0x222"
+    }
+}

@@ -18,7 +18,7 @@ function getColor(event) {
 }
 
 function getEtherscanUrl(event) {
-    return `https://etherscan.io/tx/${event.transactionHash}`
+    return `https://baobab.scope.klaytn.com/tx/${event.transactionHash}`
 }
 
 function describeEvent(event) {

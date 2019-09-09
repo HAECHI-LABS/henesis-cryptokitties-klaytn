@@ -62,14 +62,14 @@ npm run dev
 
 ### events
 
-- token 0x06012c8cf97bead5deae237070f9587f8e7a266d
+- token 0x20A1CFF753ae36988f73507A5497f02369970D70
 ```
 Pregnant (address owner, uint256 matronId, uint256 sireId, uint256 cooldownEndBlock)
 Birth(address owner, uint256 kittyId, uint256 matronId, uint256 sireId, uint256 genes);
 Transfer(address from, address to, uint256 tokenId)
 ```
 
-- ClockAuctions(Sale 0xb1690c08e213a35ed9bab7b318de14420fb57d8c, Siring 0xc7af99fe5513eb6710e6d5f44f9989da40f27f26)
+- ClockAuctions(Sale 0xD1dFd8F3bd2f05D497296Fc1C44Ff8b397189a03, Siring 0xC1C88A7B90062866F54320b18Ee5DA65F79202D6)
 ```
  AuctionCreated (uint256 tokenId, uint256 startingPrice, uint256 endingPrice, uint256 duration)
  AuctionSuccessful (uint256 tokenId, uint256 totalPrice, address winner)

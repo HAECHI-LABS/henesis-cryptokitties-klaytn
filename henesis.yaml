@@ -1,26 +1,25 @@
 version: v1
-name: kitty-tutorial 
+name: kitty-tutorial
 
 filters:
   contracts:
-  - address: '0x06012c8cf97BEaD5deAe237070F9587f8E7A266d'
+  - address: '0x20A1CFF753ae36988f73507A5497f02369970D70'
     path: ./contracts/KittyCore.sol
-    name: KittyCore 
+    name: KittyCore
     compilerVersion: 0.4.18
-  - address: '0xb1690C08E213a35Ed9bAb7B318DE14420FB57d8C'
+  - address: '0xD1dFd8F3bd2f05D497296Fc1C44Ff8b397189a03'
     path: ./contracts/SaleClockAuction.sol
-    name: SaleClockAuction 
+    name: SaleClockAuction
     compilerVersion: 0.4.18
-  - address: '0x6AA14E2e6494469D50f5f27b1FBa46bB20f2bb26'
+  - address: '0xC1C88A7B90062866F54320b18Ee5DA65F79202D6'
     path: ./contracts/SiringClockAuction.sol
-    name: SiringClockAuction 
+    name: SiringClockAuction
     compilerVersion: 0.4.18
 
 blockchain:
-  platform: ethereum 
-  network: mainnet 
-  threshold: 5
-  interval: 1000
+  platform: klaytn
+  network: baobab
+  threshold: 1
 
 provider:
   type: webSocket

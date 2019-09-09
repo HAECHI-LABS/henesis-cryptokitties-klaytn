@@ -8,8 +8,8 @@ export default () =>
        <Container>
             <Grid item>
                 <ButtonGroup size="small" aria-label="small outlined button group">
-                <Button>Ethereum</Button>
-                <Button>Mainnet</Button>
+                <Button>Klaytn</Button>
+                <Button>Baobab</Button>
                 </ButtonGroup>
             </Grid>
             <Grid container justify="center">

@@ -1,5 +1,5 @@
 {
 	"port": 8080,
 	"corsHeaders": ["Link"],
-	"integrationId": "your-integration-id"
+	"integrationId": "kitty-tutorial-klaytn-ighfq"
 }

@@ -1,5 +1,5 @@
 version: v1
-name: kitty-tutorial
+name: kitty-tutorial-klaytn
 
 filters:
   contracts:

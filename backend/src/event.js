@@ -1,15 +1,21 @@
 import Henesis from '@haechi-labs/henesis-sdk-js'
 
 export default async function ({config, model}) {
-  const henesis = new Henesis();
+
+  const henesis = new Henesis('your-client-id');
+  // subscribe "streamedBlock", then create subscription object.
   const subscription = await henesis.subscribe(
-    config.integrationId,
-    "streamedBlock"
+    "streamedBlock",
+    {
+      integrationId: config.integrationId,
+      subscriptionId: "your-subscription-id"
+    }
   );
+
   subscription.on('message', async (message) => {
-    const events = messageToEvents(message);
-    events.forEach(event => model.save(event));
-    console.log(`data received, event:${events}`);
+    const event = messageToEvent(message)
+    model.save(event)
+    console.log(`data received, event:${event.event}`)
     message.ack();
   });
 
@@ -17,25 +23,27 @@ export default async function ({config, model}) {
     console.error(err);
   });
 
+  subscription.on('close'. err => {
+    console.error(err);
+  });
+    
   //parsing logic
-  function messageToEvents(message) {
-    const events = message.data.events;
-    const blockMeta = message.data.blockMeta;
-    return events.map(event => {
-      return {
-        event: event.eventName.split('(')[0],
-        contract: event.contractName,
-        transactionHash: event.transaction.hash,
-        args: dataToArgs(event.data),
-        blockMeta
-      }
-    });
-    function dataToArgs(data) {
-      const res = {};
-      for (let item of data) {
-        res[item.name] = item.value;
-      }
-      return res;
+  function messageToEvent(message) {
+    const event = message.data.events[0];
+    const blockMeta = message.data.blockMeta
+    return {
+      event: event.eventName.split('(')[0],
+      contract: event.contractName,
+      transactionHash: event.transaction.hash,
+      args: dataToArgs(event.data),
+      blockMeta
     }
+  function dataToArgs(data) {
+    const res = {}
+    for (let item of data) {
+      res[item.name] = item.value
+    }
+    return res
   }
+ }
 }

@@ -34,7 +34,7 @@
     "express": "^4.13.3",
     "morgan": "^1.8.0",
     "resource-router-middleware": "^0.6.0",
-    "@haechi-labs/henesis-sdk-js": "1.0.0-beta.4"
+    "@haechi-labs/henesis-sdk-js": "1.0.0-beta.5"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
